@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+     <html lang="en">
+     <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <head>
+		 <title>Home</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <style>
+      /* body style */
+body {
+ background-image:linear-gradient(to right, white, Yellowgreen 100%);
+}
+/* logo style */
+.logo {
+  width: 100%;
+  height: auto;
+}
+/* menu style */
+.menu {
+ background-image:linear-gradient(to right, white, olive 95%);
+ overflow: hidden;
+ overflow:hidden;
+ border-bottom: solid thick black;
+ border-top-left-radius:2rem;
+ border-top-right-radius:2rem;
+ 
+}
+/* menu link style */
+.menu a {
+  display: block;
+  padding: 16px 14px;
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  color: olive;
+}
+/* Link hover style */
+.menu a:hover {
+  background: green;
+  color: white;
+}
+/* banner style */
+.banner {
+  width: auto;
+  height: 23rem;
+  background: rgb(5, 1, 8);
+  background: linear-gradient(90deg, black 0%, Yellowgreen 100%);
+  overflow: hidden;
+}
+/* banner head style */
+.head h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+}
+/* showcase style */
+.showcase {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  bottom: 8rem;
+}
+@media screen and (max-width: 780px) {
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    bottom: 8rem;
+  }
+}
+/* showcase boxes style */
+.box {
+  height: 18rem;
+  width: 20rem;
+  background-color: olive;
+  border-top-right-radius: 2rem;
+}
+/* box heading style */
+.box_head {
+  width: auto;
+  height: 4rem;
+  background-color: yellowgreen;
+  position: relative;
+  bottom: 1.3rem;
+  border-top-right-radius: 2rem;
+  border-bottom: solid thick white;
+  overflow: hidden;
+  padding-right
+  padding-left
+  margin-right
+  margin-left
+}
+.box_head h2 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* box image style */
+.box_image {
+  position: relative;
+  overflow: hidden;
+  bottom: 1.3rem;
+}
+.b_image {
+  height: 11rem;
+  width: 20rem;
+}
+/* team section  */
+.team {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+/* showcase boxes style */
+.team_box {
+  height: 24rem;
+  width: 20rem;
+  background-color: black;
+  border-top-right-radius: 4rem;
+}
+
+/* box heading style */
+.team_head {
+  width: auto;
+  height: 4rem;
+  background-color: black;
+  position: relative;
+  bottom: 1.3rem;
+  /* border-bottom: solid thick gold; */
+  overflow: hidden;
+}
+.team_head h2 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+.team_box .team_name {
+  background-color: gold;
+  height: 5rem;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+  bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* box image style */
+.team_image {
+  position: relative;
+  overflow: hidden;
+}
+.t_image {
+  height: 14rem;
+  width: 18rem;
+  padding: 1rem;
+  object-fit: cover;
+  border-top-right-radius: 4rem;
+}
+/* button section */
+.btn {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  width: 8rem;
+  bottom: 1rem;
+}
+.btn button {
+  width: 7rem;
+  height: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  background-color: blush;
+  color: black;
+}
+/* button hover style */
+.btn button:hover {
+  background-color: gold;
+  color: white;
+}
+/* content style */
+.content {
+  overflow: hidden;
+  position: relative;
+  bottom: 9rem;
+  padding: 2rem;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: -8rem;
+}
+.content h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+/* testimonial section */
+.testimonal {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  background: rgb(5, 1, 8);
+  background: linear-gradient(90deg, black 0%, olive 100%);
+  overflow: hidden;
+  padding: 5rem;
+}
+.test_box {
+  width: 20rem;
+  height: 18rem;
+  background-color: white;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+/* test image style */
+.test_image_box {
+  overflow: hidden;
+  position: relative;
+  bottom: 4rem;
+}
+.test_image {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 4.5rem;
+  border: solid yellowgreen;
+}
+/* test paragraph style */
+.test_para {
+  position: relative;
+  color: GrayText;
+  padding: 2rem;
+  text-align: justify;
+  font-size: 14px;
+  bottom: 5.5rem;
+}
+.all_banner {
+  width: auto;
+  height: 15rem;
+  background: rgb(5, 1, 8);
+  background: linear-gradient(90deg, black 0%, yellowgreen 100%);
+  overflow: hidden;
+}
+/* about page style begin */
+.all_content {
+  background-color: white;
+  overflow: hidden;
+  
+}
+.pages_para p {
+  text-align: justify;
+  padding: 1.5rem;
+  font-size: 18px;
+  line-height: 2rem;
+}
+/* Products style begin*/
+
+.product {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  background-color: yellowgreen;
+  top: 4rem;
+  margin-bottom: 5rem;
+  height: 100%;
+}
+/* products boxes style */
+.product_box {
+  height: 18rem;
+  width: 20rem;
+  background-color: olive;
+  border-top-right-radius: 2rem;
+}
+
+/* box heading style */
+.product_head {
+  width: auto;
+  height: 4rem;
+  background-color: yellowgreen;
+  position: relative;
+  bottom: 1.3rem;
+  border-top-right-radius: 2rem;
+  border-bottom: solid thick white;
+  overflow: hidden;
+}
+.product_head h2 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* box image style */
+.product_image {
+  position: relative;
+  overflow: hidden;
+  bottom: 1.3rem;
+}
+.p_image {
+  height: 11rem;
+  width: 20rem;
+}
+/* Product style end */
+/* contact Content section */
+.contact {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+/* contact form */
+.contact_form {
+  background-color: white;
+  height: auto;
+  width: 50%;
+  padding: 2rem;
+}
+/* contact box style */
+.contact_box {
+  text-align: left;
+  width: 70%;
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  margin: 4rem;
+  color: white;
+  border-top: solid thick gold;
+  border-bottom: solid thick yellowgreen;
+}
+/* input text area */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: gold;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 18px;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+.contact_form h1 {
+  text-align: center;
+}
+.contact_info h1 {
+  text-align: center;
+}
+/* contact info */
+.contact_info {
+  background-color: white;
+  height: auto;
+  width: 50%;
+  padding: 2rem;
+  overflow: hidden;
+}
+/* contact image section */
+.contact_image .contact_photo {
+  width: 100%;
+  height: 20rem;
+  padding-top: 3rem;
+}
+/* footer  style */
+footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: olive;
+  justify-content: space-evenly;
+  border-top: solid thick white;
+}
+.contact_para p {
+  font-size: 20px;
+  line-height: 30px;
+}
+/* footer area boxes */
+.footer_area {
+  height: 14rem;
+  width: 18rem;
+  color: white;
+  margin: 1rem;
+  padding-top: 3rem;
+}
+.footer_area h3 {
+  text-decoration: underline;
+  color: limegreen;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* copyrigt style */
+.copyright {
+  background-color: black;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+    </style>
+		</head>
+	    <body>
+	<!--Header Section-->
+       <header>
+	   <!--Logo Section-->
+	   <div id="Logo">
+	  <img class="logo"src="RESTAURENT LOGO.jpg">
+	   </div>
+	   <!--Menu Section-->
+	   <div class="menu">
+	   	<a href="Index.html">Home</a>
+		<a href="About.html">About</a>
+		<a href="Product.html">Product</a>
+		<a href="Contact.html">Contact</a>
+	   </div>
+	     <div id="srch">
+	   <div class="srch">
+	   <input class=type="search"name=""placeholder="type to text>
+	    <br> 
+	    <br> 
+		<a href="#"><button class="btn">search</button><a/>
+	   <br>
+	   </div>
+	   </header>
+	     <main>
+	   <!--Banner Section-->
+	   <div class="intro_b">
+	   <h1><marquee> WELCOME TO MA-KORP0 RESTAURENT INC. </marquee></h1> 
+	   </div>
+		   <div class="slideshow">
+		   <script type="text/javascript">
+          	var image1 = new Image()
+			image1.src="1.jpg"
+
+			var image2 = new Image()
+			image2.src="2.jpg"
+			
+			var image3 = new Image()
+			image3.src="3.jpg"
+			
+			var image4 = new Image()
+			image4.src="4.jpg"
+			
+			var image5 = new Image()
+			image5.src="Images/5.jpg"
+			
+			var image6= new Image()
+			image6.src="6.jpg"
+			         </script>
+		 <center> <img src="26.jpg" name="slideshow" width="1300" height="700" alt="imageslideshow"></center>
+			<script type="text/javascript">
+			var numberImage = 1
+			function myslide(){
+			document.images.slideshow.src=eval("image"+numberImage+".src")
+			if(numberImage < 6 )
+			numberImage = numberImage + 1
+			else
+			numberImage = 1
+			setTimeout("myslide()", 2500)
+			}
+			myslide()
+			</script>
+			<hr/>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		    <!--Boxes Section-->
+	   <div class="showcase">
+        <!-- showase boxes section -->
+        <div class="box">
+          <!-- shocase box heading  -->
+          <div class="box_head">
+            <h2><marquee>Types of Food</marquee></h2>
+          </div>
+          <div class="box_image">
+            <img class="b_image" src="5.jpg" alt="" />
+          </div>
+          <!-- Showcase button section -->
+          <div class="btn">
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box_head">
+            <h2><marquee>New Taste</marquee></h2>
+          </div>
+          <!-- showcase box image -->
+          <div class="box_image">
+            <img class="b_image" src="6.jpg" alt="" />
+          </div>
+          <!-- Showcase button section -->
+          <div class="btn">
+            <button>Order now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box_head">
+          <h2><marquee>Major food of all kind</marquee></h2>
+          </div>
+          <div class="box_image">
+            <img class="b_image" src="10.jpg" alt="" />
+          </div>
+          <!-- Showcase button section -->
+          <div class="btn">
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+      <!--content section -->
+      <div class="content">
+        <h1>About Us</h1>
+        <p>
+          Ma-korpo Resturant, we aim to combine a long history of expertise with the very latest innovation and trends,
+           to make the future of food a reality today.
+            That’s why over 10 years ago we have developed our very own 
+            consumer research initiative called Taste Tomorrow.
+          Taste Tomorrow is the world’s largest ecosystem for consumer understanding in Resturant. By tracking local and global consumer behaviors, 
+            attitudes and choices it provides us with valuable, in-depth insights.<br><br>
+             We are able to use these insights to track the evolution of trends and reveal new ones,
+              helping your business to stay connected to your customers and discover new opportunities.
+We regularly interview thousands of people to find out whd Curry prat they think about the
+ Chicken, Biryani, Shawarma, Rolls Dosa, Grill, Barbecue, anoducts they consume. 
+<br>
+Moreover, we conduct this survey in over 44 countries,
+ which helps us to consider a wide range of attitudes, choices, 
+ and tastes from around the world.
+ <br>
+  This data helps us to gather a global perspective on the 
+  food industry today and to predict where it may be headed tomorrow.
+
+
+        </p>
+        <p>
+          Insight into a wide range of consumer attitudes, choices, and tastes from over 44 countries.
+          Fresh insight and in-market inspiration from across the globe.
+          A global perspective on where the food industry is today, and where it may be headed tomorrow
+        </p>
+      </div>
+      <!-- testimonal code section -->
+     
+          <div class="test_para">
+            <p>
+              Insight into a wide range of consumer attitudes, choices, and tastes from over 44 countries.
+          Fresh insight and in-market inspiration from across the globe.
+          A global perspective on where the food industry is today, and where it may be headed tomorrow
+            </p>
+          </div>
+        </div>
+        <div class="test_box">
+         
+          <div class="test_para">
+            <p>
+              Insight into a wide range of consumer attitudes, choices, and tastes from over 44 countries.
+          Fresh insight and in-market inspiration from across the globe.
+          A global perspective on where the food industry is today, and where it may be headed tomorrow
+            </p>
+          </div>
+        </div>
+        
+          <div class="test_para">
+            <p>
+              Insight into a wide range of consumer attitudes, choices, and tastes from over 44 countries.
+              Fresh insight and in-market inspiration from across the globe.
+              A global perspective on where the food industry is today, and where it may be headed tomorrow
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <div class="footer_area">
+        <h3>Contact Info</h3>
+        <p>Address: Airfield Sinkor, Monrovia Liberia</p>
+        <p>Contact: +232770216636</p>
+        <p>Email: contactus@starzuniverisy.edu.lr</p>
+        <p>P0 Box 4882</p>
+        <p>Zip Code: 1000</p>
+      </div>
+
+      <div class="footer_area">
+        <h3>Links</h3>
+
+        <p>Contact Us</p>
+        <p>Admission</p>
+        <p>ePortal</p>
+        <p>Student Forum</p>
+        <p>Library</p>
+      </div>
+      <div class="footer_area">
+        <h3>Activities</h3>
+
+        <p>Campus Events</p>
+        <p>Sport Day</p>
+        <p>Debate Session</p>
+        <p>Exhibition</p>
+        <p>Road Trip</p>
+      </div>
+    </footer>
+    <!-- copyright section -->
+    <div class="copyright">
+      <p>
+        &copy; 2022 Starz University. All Right Reserved <br />
+        Developed By:
+        <a href="edwardkoffa1@gmail.com">Group Three (3)</a>
+      </p>
+    </div>
+  </body>
+</html>
+
+		   
+		   
+		   
+		   
+		   </body>
+		   </html>
